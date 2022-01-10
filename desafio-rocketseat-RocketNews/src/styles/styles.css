@@ -18,7 +18,7 @@
   display: flex;
 }
 .content {
-  width: calc(50% - 54px);
+  width: 50%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -78,21 +78,21 @@ form input {
   position: relative;
   filter: drop-shadow(4px 10px 15px rgba(0, 0, 0, 0.5));
   /* erro no before, implementação para simular pseudo elemento verde antes do input */
-  border-left: 5px solid var(--title-color);
+ /*  border-left: 5px solid var(--title-color); */
 }
 input:invalid {
   border: 1px solid red;
 }
-/* 
-Tentativa de implementar o ::before antes do input before não aparece
+
+/*Tentativa de implementar o ::before antes do input before não aparece*/
 input::before {
   content: "";
   margin: 0;
-  position: absolute;
+  position: fixed;
   width: 5px;
   height: 100px;
   background-color: var(--title-color);
-} */
+}
 
 .form form button {
   background-color: var(--bg-button-color);
@@ -119,14 +119,20 @@ input::before {
 }
 
 .image {
-  width: calc(50% + 54px);
+  width: 50%;
   height: 100vh;
+  background-image: url("./../images/assets/read_news.jpg");
+  background-position: 68% center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+
 }
-.image img {
+/* .image img {
   width: 100%;
   height: 100vh;
   display: flex;
   object-fit: cover;
   padding-right: 0px;
-  mix-blend-mode: normal;
 }
+ */
