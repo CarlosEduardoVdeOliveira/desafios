@@ -1,4 +1,4 @@
 # desafios
 Desafios sobre HTML da Rocketseat
 
-<a hre="https://carloseduardovdeoliveira.github.io/desafios/">Portfolio</a>
+<a href="https://carloseduardovdeoliveira.github.io/desafios/">Portfolio</a>
