@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --color-bg-body: rgb(218, 218, 218);
+    --color-text: rgb(209, 209, 209);
+    --color-bg: rgb(24, 24, 24);
+    --color-primary: rgb(14, 240, 112);
+    --color-hover: rgb(18, 119, 86);
+}
+html {
+    height: 100vh;
+}
+body{
+    background-color: var(--color-bg-body);
+}
+
+.container {
+    background-color: var(--color-bg);
+    display: flex;
+    margin: 5px auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 600px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+.image-perfil{
+    margin: 32px 0;
+    width: 200px;
+    position: relative;
+    object-fit: cover;
+    border-radius: 500px;
+    border: 3px solid var(--color-primary);
+}
+
+.desafios--html .h3-html {
+    color: var(--color-text);
+    font-size: 20px;
+    padding: 5px;
+}
+.desafios--html .h3-html i{
+    margin-right: 8px;
+    cursor: pointer;   
+}
+
+ul{
+    list-style:none;
+    width: 430px;
+    padding: 12px;
+}
+
+.ul-links li{
+    margin-bottom: 8px;
+    
+}
+
+.ul-links{
+    display: none;
+    width: 430px;
+    margin-left: 35px;
+    /* animação */
+    /* opacity: 0;
+    transition: 1s;
+    transform: rotate3d(-50px, 0px, 0px); */
+}
+
+.active-links{
+    display: block;
+    height: 100px;
+    border: 1px solid rgb(27, 27, 27);
+    overflow-y: auto;
+    /* animação */
+    /* opacity: 1;
+    transform: rotate3d(0px, 0px,0px); */
+}
+
+a{
+    color: var(--color-primary);
+    font-size: 16px;
+    font-weight: 500;
+    transition: color .5s ease-in-out;
+}
+
+a:hover{
+    color: var(--color-hover);
+    
+}
+
+.contatos .socials {
+    display: flex;
+       
+}
+
+.contatos .socials i{
+    font-size: 22px;
+    color: var(--color-primary);
+    margin: 10px;
+    border-radius: 5px;
+    transition: all .5s ease-in;
+    cursor: pointer;
+}
+
+.contatos .socials i:hover {
+    color: var(--color-hover);
+    transform: scale3d(1.2, 1.2, 1.2);
+}
+
+footer{
+    width: 100%;
+    height: 79px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-bg);
+}
+footer p{
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+
+
