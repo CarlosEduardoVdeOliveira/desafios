@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@100;400;500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+body{
+    background-color: var(--body-bg-color);
+    font-family: Merriweather Sans;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.container{
+   /*  display: grid;
+    grid-template-areas: "aside" "main0 main1";
+    grid-template-columns: 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px;
+}
+
+.container aside{
+    display: flex;
+    flex-direction: column;
+}
+.card {
+    width: 348px;
+    background-color: var(--bg-cards);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+    margin-bottom: 30px;
+    padding: 30px;
+    
+}
+aside .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Images profiles*/
+aside .profile img,
+main .recent-content img{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+}
+aside .profile img{
+    margin-bottom: 30px;
+    border: 2px solid #00FF00;
+}
+aside .profile h3{
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 29px;
+}
+aside .profile span {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+}
+.social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 17px;
+}
+
+.social a{
+    display: flex;
+    align-items: center;
+    margin: 0 15px 15px 0;
+}
+.social img{
+    margin-right: 20px;
+}
+.social span{
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.techs{
+    display: grid;
+    grid-template-areas: "title title title" "tech0 tech1 tech2";
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+h3{
+    grid-area: title;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+}
+.tech{
+    width: 86px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: tech0 tech1 tech2;
+    background-color: var(--bg-techs);
+    color: var(--body-bg-color);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.experiences,
+.education {
+   font-weight: bold;
+   line-height: 20px;
+    
+}
+
+.experiences ul,
+.education ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences li,
+.education li {
+    margin: 0 0 20px 45px;
+}
+
+.card-title,
+.recent-content{
+    width: 920px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+   
+}
+
+.projects{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     gap: 20px;
+     margin-left: 30px;
+}
+
+.projects .project{
+    
+    text-align: justify;
+    width: 450px;
+    line-height: 30px;
+}
+.projects .project .title-project{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+
+.projects .project .title-project img{
+    margin-right: 30px;
+}
+
+.projects .project .description-project{
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.projects .project .footer-project,
+.projects .project .footer-project .start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects .project .footer-project .start{
+    justify-content: flex-start;
+}
+
+.projects .project .footer-project .start img,
+.projects .project .footer-project .project-tech img {
+    margin-right: 10px
+}
+
+.projects .project .footer-project .start span{
+    margin-right: 30px
+}
+
+
+.recent-content {
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 30px;
+}
+.recent-content .title{
+    font-weight: bold;
+    font-size: 18px;
+}
+.recent-content .date{
+    font-size: 14px;
+    line-height: 18px;
+}
+.description {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.recent-content .hash-tag:nth-child(2n+1) {
+    margin: 10px;
+}
+
+
+footer{
+    opacity: 0.6;
+    text-align: center;
+    padding: 1.2rem;
+}
